@@ -1,0 +1,679 @@
+<!doctype html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon link -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- Remix icon link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper Js Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+  <body>
+    <div class="scroll-btn btn fixed bottom-5 right-5 z-50 p-2 hidden">
+      <i class="ri-arrow-up-line"></i>
+    </div>
+    <header
+      class="header fixed top-0 left-0 w-full z-50 bg-green-950"
+      id="header"
+    >
+      <nav class="nav layout flex justify-between items-center h-[70px]">
+        <div class="logo">
+          <p class="font-Lobster text-2xl">indorplants.</p>
+        </div>
+        <div
+          class="nav__menu absolute top-0 left-[-100%] w-full h-screen z-50 flex justify-center items-center bg-green-950/50 backdrop-blur-2xl duration-300 overflow-hidden md:static md:h-fit md:w-auto md:bg-transparent md:backdrop-blur-none"
+          id="nav-menu"
+        >
+          <ul class="nav__list flex flex-col gap-6 md:flex-row">
+            <li class="nav__item">
+              <a
+                href="#"
+                class="nav__link font-bold hover:text-yellow-400 duration-300"
+                >Home</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                href="#about"
+                class="nav__link font-bold hover:text-yellow-400 duration-300"
+                >About</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                href="#popular"
+                class="nav__link font-bold hover:text-yellow-400 duration-300"
+                >Popular</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                href="#review"
+                class="nav__link font-bold hover:text-yellow-400 duration-300"
+                >Review</a
+              >
+            </li>
+          </ul>
+          <div class="leaf-left absolute -top-5 -left-10 md:hidden">
+            <img src="img/leaf-1.png" class="w-32" alt="img" loading="lazy" />
+          </div>
+          <div class="leaf-right absolute -bottom-10 -right-5 md:hidden">
+            <img src="img/leaf-2.png" class="w-32" alt="img" loading="lazy" />
+          </div>
+        </div>
+        <div class="menu-icon text-3xl cursor-pointer z-50 md:hidden">
+          <i class="ri-menu-4-line"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="relative section">
+        <div
+          class="home__container layout grid grid-cols-1 md:grid-cols-2 gap-10 place-items-center"
+        >
+          <!-- blob 1 -->
+          <div
+            class="absolute w-48 h-48 bg-green-500 rounded-full opacity-40 blur-3xl"
+          ></div>
+          <!-- blob 2 -->
+          <div
+            class="absolute w-48 h-48 bg-green-500 rounded-full opacity-40 blur-3xl bottom-0 right-0"
+          ></div>
+          <div class="home__content">
+            <h1 class="home__title text-4xl md:text-5xl font-bold">
+              <span class="text-yellow-400">plants</span> make a positive
+              <span class="text-yellow-400">impact</span> on your environment
+            </h1>
+            <p
+              class="home__description text-md my-5 font-Lobster text-gray-400"
+            >
+              Bring nature into your home with our stunning collection of indoor
+              plants. Perfect for any space, our plants add life, color, and
+              freshness to your living environment.
+            </p>
+            <div class="home__buttons flex gap-4">
+              <button class="btn">shop now <i class="ri-leaf-line"></i></button>
+              <button class="btn bg-transparent text-white">
+                explore more <i class="ri-leaf-line"></i>
+              </button>
+            </div>
+            <div class="">
+              <p class="font-Lobster my-2 text-sm text-gray-400">
+                you will get 30-days free trial
+              </p>
+              <ul class="media flex gap-4">
+                <li>
+                  <i class="ri-facebook-line text-xl cursor-pointer"></i>
+                </li>
+                <li>
+                  <i class="ri-instagram-line text-xl cursor-pointer"></i>
+                </li>
+                <li>
+                  <i class="ri-twitter-line text-xl cursor-pointer"></i>
+                </li>
+                <li>
+                  <i class="ri-youtube-line text-xl cursor-pointer"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="relative w-[65%] md:w-full">
+            <img
+              src="img/home.png"
+              alt="Home Plant"
+              class="home__image w-full h-auto"
+              loading="lazy"
+            />
+            <!-- Leaf -->
+            <div
+              class="absolute text-4xl md:text-6xl text-yellow-400/50 top-0 right-0 animate-move"
+            >
+              <i class="ri-leaf-line"></i>
+            </div>
+            <!-- Flower -->
+            <div
+              class="absolute text-4xl md:text-6xl text-yellow-400/50 bottom-0 left-0 animate-scale"
+            >
+              <i class="ri-flower-line"></i>
+            </div>
+            <!-- Plant -->
+            <div
+              class="absolute text-4xl md:text-6xl text-yellow-400/50 top-0 left-0 animate-spin"
+              style="animation-duration: 2s"
+            >
+              <i class="ri-plant-line"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="section bg-white text-green-900">
+        <div
+          class="layout grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3"
+        >
+          <div
+            class="services__card card border border-green-900 p-5 rounded-2xl shadow-xl"
+          >
+            <div class="flex items-center gap-2 mb-3">
+              <i class="ri-truck-line text-2xl"></i>
+              <h3 class="text-lg font-bold">free delivery</h3>
+            </div>
+            <p class="font-Lobster font-bold leading-7 text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+              illo.
+            </p>
+          </div>
+          <div
+            class="services__card card border border-green-900 p-5 rounded-2xl shadow-xl"
+          >
+            <div class="flex items-center gap-2 mb-3">
+              <i class="ri-customer-service-2-line text-2xl"></i>
+              <h3 class="text-lg font-bold">24/7 support</h3>
+            </div>
+            <p class="font-Lobster font-bold leading-7 text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+              illo.
+            </p>
+          </div>
+          <div
+            class="services__card card border border-green-900 p-5 rounded-2xl shadow-xl"
+          >
+            <div class="flex items-center gap-2 mb-3">
+              <i class="ri-plant-line text-2xl"></i>
+              <h3 class="text-lg font-bold">fresh plants</h3>
+            </div>
+            <p class="font-Lobster font-bold leading-7 text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+              illo.
+            </p>
+          </div>
+          <div
+            class="services__card card border border-green-900 p-5 rounded-2xl shadow-xl"
+          >
+            <div class="flex items-center gap-2 mb-3">
+              <i class="ri-money-dollar-circle-line text-2xl"></i>
+              <h3 class="text-lg font-bold">affordable price</h3>
+            </div>
+            <p class="font-Lobster font-bold leading-7 text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+              illo.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="section relative overflow-hidden">
+        <div class="absolute -top-10 -right-20 w-48 opacity-50">
+          <img src="img/leaf-3.png" alt="img" loading="lazy" />
+        </div>
+        <div class="layout">
+          <div class="about__title text-center">
+            <h2 class="text-yellow-400 font-Lobster text-3xl mb-5">about us</h2>
+            <p>follow instructions for more</p>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-10 place-items-center my-10"
+          >
+            <div class="about__leaf-1 w-2/3">
+              <img src="img/plant-1.png" alt="img" loading="lazy" />
+            </div>
+            <div class="about__content-1">
+              <h3 class="mb-5 text-2xl">
+                make your <span class="text-yellow-400">organic</span> gardin
+              </h3>
+              <p class="font-Lobster">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates facilis fugit, doloribus minima ullam voluptate
+                recusandae accusantium accusamus. Consequatur recusandae
+                repudiandae ad maiores non, iure consequuntur incidunt illo
+                aliquam expedita.
+              </p>
+            </div>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-10 place-items-center my-10"
+          >
+            <div class="about__content-2">
+              <h3 class="mb-5 text-2xl">
+                come with <span class="text-yellow-400">fresh</span> atmosphere
+              </h3>
+              <p class="font-Lobster">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates facilis fugit, doloribus minima ullam voluptate
+                recusandae accusantium accusamus. Consequatur recusandae
+                repudiandae ad maiores non, iure consequuntur incidunt illo
+                aliquam expedita.
+              </p>
+            </div>
+            <div class="about__leaf-2 w-2/3">
+              <img src="img/plant-2.png" alt="img" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="absolute -bottom-10 -left-20 w-48 opacity-50">
+          <img src="img/leaf-4.png" alt="img" loading="lazy" />
+        </div>
+      </section>
+      <section id="popular" class="section bg-green-900">
+        <div class="layout">
+          <div class="popular__title text-center">
+            <h2 class="text-yellow-400 font-Lobster text-3xl mb-5">
+              choose your favorite
+            </h2>
+            <p>follow instructions for more</p>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 gap-y-28 mt-28"
+          >
+            <div
+              class="popular__card card bg-green-950 p-7 rounded-2xl relative pt-24 text-center group"
+            >
+              <img
+                src="img/cart-1.png"
+                alt="img"
+                loading="lazy"
+                class="absolute -top-5 left-1/2 transform -translate-y-1/2 -translate-x-1/2 w-48 group-hover:-top-10 duration-500"
+              />
+              <p class="italic text-sm">nephrolepis exaltala</p>
+              <h3 class="text-2xl my-2">boston fern</h3>
+              <ul class="rate flex justify-center gap-2 mb-2">
+                <li><i class="ri-star-fill text-yellow-400 text-sm"></i></li>
+                <li><i class="ri-star-fill text-yellow-400 text-sm"></i></li>
+                <li><i class="ri-star-fill text-yellow-400 text-sm"></i></li>
+                <li>
+                  <i class="ri-star-half-line text-yellow-400 text-sm"></i>
+                </li>
+                <li>
+                  <i class="ri-star-half-line text-yellow-400 text-sm"></i>
+                </li>
+              </ul>
+              <div class="flex justify-between items-center gap-2">
+                <span class="text-xl">5$</span>
+                <button class="btn py-1 px-3 text-lg text-white">
+                  <i class="ri-shopping-cart-line"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="popular__card card bg-green-950 p-7 rounded-2xl relative pt-24 text-center group"
+            >
+              <img
+                src="img/cart-2.png"
+                alt="img"
+                loading="lazy"
+                class="absolute -top-5 left-1/2 transform -translate-y-1/2 -translate-x-1/2 w-48 group-hover:-top-10 duration-500"
+              />
+              <p class="italic text-sm">ficus elastica</p>
+              <h3 class="text-2xl my-2">rubber plant</h3>
+              <ul class="rate flex justify-center gap-2 mb-2">
+                <li><i class="ri-star-fill text-yellow-400 text-sm"></i></li>
+                <li><i class="ri-star-fill text-yellow-400 text-sm"></i></li>
+                <li><i class="ri-star-fill text-yellow-400 text-sm"></i></li>
+                <li>
+                  <i class="ri-star-half-line text-yellow-400 text-sm"></i>
+                </li>
+                <li>
+                  <i class="ri-star-half-line text-yellow-400 text-sm"></i>
+                </li>
+              </ul>
+              <div class="flex justify-between items-center gap-2">
+                <span class="text-xl">5$</span>
+                <button class="btn py-1 px-3 text-lg text-white">
+                  <i class="ri-shopping-cart-line"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="popular__card card bg-green-950 p-7 rounded-2xl relative pt-24 text-center group"
+            >
+              <img
+                src="img/cart-3.png"
+                alt="img"
+                loading="lazy"
+                class="absolute -top-5 left-1/2 transform -translate-y-1/2 -translate-x-1/2 w-48 group-hover:-top-10 duration-500"
+              />
+              <p class="italic text-sm">spathiphyllum wallisii</p>
+              <h3 class="text-2xl my-2">peace lily</h3>
+              <ul class="rate flex justify-center gap-2 mb-2">
+                <li><i class="ri-star-fill text-yellow-400 text-sm"></i></li>
+                <li><i class="ri-star-fill text-yellow-400 text-sm"></i></li>
+                <li><i class="ri-star-fill text-yellow-400 text-sm"></i></li>
+                <li>
+                  <i class="ri-star-half-line text-yellow-400 text-sm"></i>
+                </li>
+                <li>
+                  <i class="ri-star-half-line text-yellow-400 text-sm"></i>
+                </li>
+              </ul>
+              <div class="flex justify-between items-center gap-2">
+                <span class="text-xl">5$</span>
+                <button class="btn py-1 px-3 text-lg text-white">
+                  <i class="ri-shopping-cart-line"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="popular__card card bg-green-950 p-7 rounded-2xl relative pt-24 text-center group"
+            >
+              <img
+                src="img/cart-4.png"
+                alt="img"
+                loading="lazy"
+                class="absolute -top-5 left-1/2 transform -translate-y-1/2 -translate-x-1/2 w-48 group-hover:-top-10 duration-500"
+              />
+              <p class="italic text-sm">adenium obesum</p>
+              <h3 class="text-2xl my-2">desert rose</h3>
+              <ul class="rate flex justify-center gap-2 mb-2">
+                <li><i class="ri-star-fill text-yellow-400 text-sm"></i></li>
+                <li><i class="ri-star-fill text-yellow-400 text-sm"></i></li>
+                <li><i class="ri-star-fill text-yellow-400 text-sm"></i></li>
+                <li>
+                  <i class="ri-star-half-line text-yellow-400 text-sm"></i>
+                </li>
+                <li>
+                  <i class="ri-star-half-line text-yellow-400 text-sm"></i>
+                </li>
+              </ul>
+              <div class="flex justify-between items-center gap-2">
+                <span class="text-xl">5$</span>
+                <button class="btn py-1 px-3 text-lg text-white">
+                  <i class="ri-shopping-cart-line"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="review" class="section">
+        <div class="layout">
+          <div class="review__title text-center">
+            <h2 class="text-yellow-400 font-Lobster text-3xl mb-5">
+              our customer review
+            </h2>
+            <p>follow instructions for more</p>
+          </div>
+          <div class="review__container swiper mt-10">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="bg-green-900 p-7 rounded-xl">
+                  <p class="font-Lobster mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum asperiores expedita, aliquam amet qui ipsum.
+                  </p>
+                  <div>
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="img/review-1.jpg"
+                          alt="img"
+                          loading="lazy"
+                          class="w-12 h-12 rounded-full"
+                        />
+                        <div>
+                          <h3 class="text-yellow-400 font-bold">john doe</h3>
+                          <p>web developer</p>
+                        </div>
+                      </div>
+                      <i
+                        class="ri-double-quotes-r text-yellow-400 text-2xl"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-green-900 p-7 rounded-xl">
+                  <p class="font-Lobster mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum asperiores expedita, aliquam amet qui ipsum.
+                  </p>
+                  <div>
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="img/review-2.jpg"
+                          alt="img"
+                          loading="lazy"
+                          class="w-12 h-12 rounded-full"
+                        />
+                        <div>
+                          <h3 class="text-yellow-400 font-bold">john doe</h3>
+                          <p>web developer</p>
+                        </div>
+                      </div>
+                      <i
+                        class="ri-double-quotes-r text-yellow-400 text-2xl"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-green-900 p-7 rounded-xl">
+                  <p class="font-Lobster mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum asperiores expedita, aliquam amet qui ipsum.
+                  </p>
+                  <div>
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="img/review-3.jpg"
+                          alt="img"
+                          loading="lazy"
+                          class="w-12 h-12 rounded-full"
+                        />
+                        <div>
+                          <h3 class="text-yellow-400 font-bold">john doe</h3>
+                          <p>web developer</p>
+                        </div>
+                      </div>
+                      <i
+                        class="ri-double-quotes-r text-yellow-400 text-2xl"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-green-900 p-7 rounded-xl">
+                  <p class="font-Lobster mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum asperiores expedita, aliquam amet qui ipsum.
+                  </p>
+                  <div>
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="img/review-4.jpg"
+                          alt="img"
+                          loading="lazy"
+                          class="w-12 h-12 rounded-full"
+                        />
+                        <div>
+                          <h3 class="text-yellow-400 font-bold">john doe</h3>
+                          <p>web developer</p>
+                        </div>
+                      </div>
+                      <i
+                        class="ri-double-quotes-r text-yellow-400 text-2xl"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-green-900 p-7 rounded-xl">
+                  <p class="font-Lobster mb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum asperiores expedita, aliquam amet qui ipsum.
+                  </p>
+                  <div>
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="img/review-3.jpg"
+                          alt="img"
+                          loading="lazy"
+                          class="w-12 h-12 rounded-full"
+                        />
+                        <div>
+                          <h3 class="text-yellow-400 font-bold">john doe</h3>
+                          <p>web developer</p>
+                        </div>
+                      </div>
+                      <i
+                        class="ri-double-quotes-r text-yellow-400 text-2xl"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="relative bg-white section mt-20">
+        <!-- Newsletter form -->
+        <div class="absolute top-0 left-0 right-0 transform -translate-y-1/2">
+          <div class="layout">
+            <div class="bg-green-900 p-6 md:p-10 rounded-xl">
+              <div class="flex flex-col md:flex-row items-center gap-5">
+                <div class="w-full md:w-1/2">
+                  <h2 class="text-2xl md:text-3xl">
+                    <span class="text-yellow-400">subscribe</span> to our
+                    newsletter
+                  </h2>
+                </div>
+                <form class="w-full md:w-1/2 flex flex-col sm:flex-row gap-3">
+                  <input
+                    type="email"
+                    class="bg-white flex-1 outline-none border-none py-3 px-5 rounded text-black caret-yellow-400 min-w-0"
+                    placeholder="Enter Your Email"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    class="btn flex items-center justify-center capitalize text-sm md:text-lg whitespace-nowrap"
+                  >
+                    subscribe <i class="ri-send-plane-fill"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__container">
+          <!-- Social -->
+          <div class="layout border border-t-green-950 my-10 relative">
+            <ul
+              class="media flex gap-4 bg-white px-2 w-fit absolute left-1/2 -translate-x-1/2 -translate-y-1/2"
+            >
+              <li>
+                <i
+                  class="ri-facebook-line text-xl text-green-950 cursor-pointer"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="ri-instagram-line text-xl text-green-950 cursor-pointer"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="ri-twitter-line text-xl text-green-950 cursor-pointer"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="ri-youtube-line text-xl text-green-950 cursor-pointer"
+                ></i>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="layout grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-green-900"
+          >
+            <div class="flex items-center flex-col gap-3">
+              <i class="ri-leaf-fill text-7xl"></i>
+              <p class="font-Lobster text-2xl">indorplants.</p>
+            </div>
+            <div class="">
+              <h4 class="font-bold text-xl mb-2">quick links</h4>
+              <ul>
+                <li
+                  class="text-green-900/90 cursor-pointer hover:text-yellow-400 transition-colors duration-300"
+                >
+                  plants
+                </li>
+                <li
+                  class="text-green-900/90 cursor-pointer hover:text-yellow-400 transition-colors duration-300"
+                >
+                  flowers
+                </li>
+                <li
+                  class="text-green-900/90 cursor-pointer hover:text-yellow-400 transition-colors duration-300"
+                >
+                  gardens
+                </li>
+                <li
+                  class="text-green-900/90 cursor-pointer hover:text-yellow-400 transition-colors duration-300"
+                >
+                  seeds
+                </li>
+                <li
+                  class="text-green-900/90 cursor-pointer hover:text-yellow-400 transition-colors duration-300"
+                >
+                  shippig
+                </li>
+              </ul>
+            </div>
+            <div class="">
+              <h4 class="font-bold text-xl mb-2">popular services</h4>
+              <ul>
+                <li
+                  class="text-green-900/90 cursor-pointer hover:text-yellow-400 transition-colors duration-300"
+                >
+                  tree planting
+                </li>
+                <li
+                  class="text-green-900/90 cursor-pointer hover:text-yellow-400 transition-colors duration-300"
+                >
+                  grass cutting
+                </li>
+                <li
+                  class="text-green-900/90 cursor-pointer hover:text-yellow-400 transition-colors duration-300"
+                >
+                  weeds control
+                </li>
+              </ul>
+            </div>
+            <div class="">
+              <h4 class="font-bold text-xl mb-2">contact us</h4>
+              <div class="">
+                +88 777 33 907
+                <p>indorplants@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="copy-right text-yellow-600/90 text-center bg-white py-6">
+        copyright &copy; <span id="current-year">2026</span>
+        <span class="text-green-950">indorplants</span>. all rights reserved
+      </div>
+    </main>
+  </body>
+  <!-- Swiper Js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!-- Scroll Reveal Js -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/main.js"></script>
+</html>

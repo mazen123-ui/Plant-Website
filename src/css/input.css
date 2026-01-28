@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&display=swap");
+@import "tailwindcss";
+@theme {
+  --font-Jost: "Jost", sans-serif;
+  --font-Lobster: "Lobster", cursive;
+  --animate-move: move 2s ease-in-out infinite;
+  --animate-scale: scale 2s ease-in-out infinite;
+  @keyframes move {
+    0,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes scale {
+    0%,
+    100% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
+}
+
+@layer components {
+  body {
+    @apply bg-green-950 text-white font-Jost tracking-wider capitalize;
+  }
+  .layout {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .active {
+    @apply text-yellow-400;
+  }
+  .active-header {
+    @apply border-b-2 border-b-yellow-400/50;
+  }
+  .section {
+    @apply py-20;
+  }
+  .btn {
+    @apply flex items-center gap-2 px-6 py-2 bg-yellow-400 text-sm border border-yellow-400 text-green-950 font-bold rounded cursor-pointer transition-all duration-300 ease-in-out;
+  }
+  .btn:hover {
+    @apply bg-yellow-300;
+  }
+  .card {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  .card:hover {
+    @apply -translate-y-2;
+  }
+  .media li i {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  .media li i:hover {
+    @apply text-yellow-300;
+  }
+}
